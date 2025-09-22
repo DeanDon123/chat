@@ -1,0 +1,40 @@
+/* styles.css */
+:root{font-family:Inter,Arial,Helvetica,sans-serif}
+body{background:#f4f7fb;margin:0;padding:20px}
+.container{max-width:720px;margin:0 auto;background:#fff;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.06);overflow:hidden}
+header{padding:16px 20px;border-bottom:1px solid #eee}
+header h1{margin:0;font-size:18px}
+main{padding:12px}
+.chat{height:420px;overflow:auto;padding:12px;border:1px solid #eee;border-radius:6px;background:#fafbfd}
+.message{padding:8px 10px;margin-bottom:8px;border-radius:6px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.02)}
+.message .meta{font-size:12px;color:#666;margin-bottom:6px}
+.message .text{white-space:pre-wrap}
+.form{display:flex;gap:8px;margin-top:12px}
+.form input[type=text]{flex:0 0 160px;padding:8px;border:1px solid #ddd;border-radius:6px}
+.form textarea{flex:1;padding:8px;border:1px solid #ddd;border-radius:6px}
+.form button{padding:8px 14px;border:0;border-radius:6px;background:#1976d2;color:#fff;cursor:pointer}
+.delete-btn {
+  margin-left: 10px;
+  padding: 2px 6px;
+  font-size: 11px;
+  border: none;
+  border-radius: 4px;
+  background: #e53935;
+  color: #fff;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background: #c62828;
+}
+@media(max-width:600px){
+  .form{flex-direction:column}
+  .form input[type=text]{width:100%}
+}
+.chat-media {
+  max-width: 100%;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+.chat-media video {
+  max-height: 200px;
+}
